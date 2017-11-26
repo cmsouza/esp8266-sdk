@@ -1,7 +1,7 @@
-from debian
+FROM debian:buster
 
 RUN apt-get update -y && \
-    apt-get install \
+    apt-get install --no-install-recommends\
     autoconf automake bash bison bzip2 flex \
     g++ gawk gcc git gperf help2man libexpat-dev \
     libtool libtool-bin make ncurses-dev python \
